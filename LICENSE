@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Anshul Kumar
+Copyright (c) 2025 Anshul Kumar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,19 +22,5 @@ SOFTWARE.
 
 ---
 
-ACADEMIC INTEGRITY NOTICE:
-
-This project was originally developed as coursework for 18-781 Speech
-Recognition and Understanding at Carnegie Mellon University. It is shared
-publicly for educational purposes.
-
-If you are currently enrolled in this course or a similar course at any
-institution:
-- DO NOT copy this code directly for your assignments
-- Use it as a reference to understand concepts and approaches
-- Implement your own solution according to your institution's academic
-  integrity policies
-- Failure to do so may constitute academic dishonesty
-
-The author and Carnegie Mellon University are not responsible for any
-academic integrity violations resulting from misuse of this code.
+This project was developed as coursework for 18-781 Speech Recognition and 
+Understanding at Carnegie Mellon University (Fall 2025).
