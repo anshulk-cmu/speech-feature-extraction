@@ -99,7 +99,4 @@ dmypy.json
 *~
 
 # Project specific
-*.wav
-*.npz
-feature_visualization*.png
 handout.pdf

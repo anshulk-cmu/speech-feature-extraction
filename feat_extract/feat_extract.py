@@ -257,7 +257,6 @@ def visualize_features(audio: np.ndarray, lmf_features: np.ndarray, mfcc_feature
     plt.savefig(output_filename, dpi=300, bbox_inches='tight')
     print(f"Visualization saved as {output_filename}")
 
-##-------------------------------------END OF PROVIDED UTILS. CODE TO BE FILLED STARTS BELOW-----------------------------
 
 def frame_with_overlap(signal: np.ndarray, window_length: int, overlap_length: int):
     """Creates overlapping windows (frames) of the input signal.
@@ -335,7 +334,7 @@ def get_mel_fbank_feat(power_spec: np.ndarray, mel_filterbanks: np.ndarray, eps=
     # (num_frames, nfft/2+1) @ (nfft/2+1, num_filters) -> (num_frames, num_filters)
     mel_fbank = np.dot(power_spec, mel_filterbanks.T)
     
-    # As per the instructions, replace any features that are exactly zero with a small
+    # Replace any features that are exactly zero with a small
     # epsilon value to prevent errors when taking the logarithm in the next step. 
     mel_fbank[mel_fbank == 0] = eps
     
@@ -374,12 +373,10 @@ if __name__ == "__main__":
 
     print("---------- Success! ----------")
 
-    # NOTE: To generate visualizations for the assignment, uncomment the following lines
-    # after successfully implementing all required functions:
+
     # Generate visualization
     visualize_features(audio, my_lmf_feats, my_mfcc_feats, 
                     sampling_rate=sampling_rate, 
                     window_length=0.025, 
                     overlap_length=0.01)
-    # NOTE: !!Do not forget to comment this out before submitting to Gradescope!!
 
